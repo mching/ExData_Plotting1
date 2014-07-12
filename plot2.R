@@ -17,7 +17,7 @@ dat$Date_time <- strptime(dat$Date_time, format = "%Y-%m-%d %H:%M:%S")
 dat$Global_active_power <- as.numeric(dat$Global_active_power)
 
 # Create plot
-png(file = "./figures/plot2.png", width = 480, height = 480)
+png(file = "./figure/plot2.png", width = 480, height = 480)
 plot(x = dat$Date_time, y = dat$Global_active_power, ylab = "Global Active Power (kilowatts)",
      type = "l", xlab = ""
      )
